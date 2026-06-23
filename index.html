@@ -227,19 +227,97 @@
       line-height: 1.5;
     }
 
-    /* ── CHAMPIONSHIP STRIP ── */
-    .championship-strip {
+    /* ── ROLL OF HONOUR ── */
+    .roll-of-honour {
       background: var(--green);
       color: #fff;
+      padding: 64px 24px;
+      max-width: 100%;
+    }
+
+    .roll-of-honour .eyebrow {
+      text-align: center;
+      font-size: 11px;
+      letter-spacing: 4px;
+      text-transform: uppercase;
+      color: var(--gold);
+      margin-bottom: 8px;
+    }
+
+    .roll-of-honour h2 {
+      text-align: center;
+      font-size: clamp(28px, 4vw, 42px);
+      font-weight: normal;
+      margin-bottom: 40px;
+    }
+
+    .roll {
+      max-width: 640px;
+      margin: 0 auto;
+    }
+
+    .roll-row {
+      display: flex;
+      align-items: center;
+      gap: 24px;
+      padding: 20px 0;
+      border-bottom: 1px solid rgba(255,255,255,0.15);
+    }
+
+    .roll-row:first-child {
+      border-top: 1px solid rgba(255,255,255,0.15);
+    }
+
+    .roll-year {
+      font-size: 13px;
+      letter-spacing: 2px;
+      color: var(--gold);
+      width: 48px;
+      flex-shrink: 0;
+    }
+
+    .roll-trophy {
+      font-size: 22px;
+      flex-shrink: 0;
+    }
+
+    .roll-names {
+      font-size: 20px;
+      font-weight: normal;
+    }
+
+    .roll-edition {
+      font-size: 12px;
+      color: rgba(255,255,255,0.5);
+      margin-top: 3px;
+      letter-spacing: 1px;
+    }
+
+    /* ── CHAMPIONSHIP STRIP ── */
+    .strip-logo {
+      width: 100px;
+      height: 100px;
+      border-radius: 50%;
+      object-fit: contain;
+      background: #fff;
+      padding: 10px;
+      margin-bottom: 24px;
+      box-shadow: 0 4px 16px rgba(0,0,0,0.12);
+    }
+
+    .championship-strip {
+      background: var(--cream);
+      color: #222;
       text-align: center;
       padding: 56px 24px;
+      border-top: 4px solid var(--green);
     }
 
     .championship-strip .strip-eyebrow {
       font-size: 11px;
       letter-spacing: 4px;
       text-transform: uppercase;
-      color: var(--gold);
+      color: var(--green);
       margin-bottom: 12px;
     }
 
@@ -247,13 +325,14 @@
       font-size: clamp(28px, 5vw, 52px);
       font-weight: normal;
       margin-bottom: 24px;
+      color: var(--green);
     }
 
     .championship-strip p {
       font-size: 16px;
       max-width: 520px;
       margin: 0 auto;
-      opacity: 0.85;
+      color: #555;
       line-height: 1.7;
     }
 
@@ -382,7 +461,7 @@
     <div class="schedule-item">
       <div class="schedule-time">Knock Out</div>
       <div class="schedule-desc">
-        <h3>Knock Out Round</h3>
+        <h3>Knock Out Rounds</h3>
         <p>No mercy. Win or go home.</p>
       </div>
     </div>
@@ -409,8 +488,41 @@
     </div>
   </section>
 
+  <!-- ROLL OF HONOUR -->
+  <div class="roll-of-honour">
+    <p class="eyebrow">Past Champions</p>
+    <h2>Roll of Honour</h2>
+    <div class="roll">
+      <div class="roll-row">
+        <div class="roll-year">2023</div>
+        <div class="roll-trophy">🏆</div>
+        <div>
+          <div class="roll-names">Nick Ketchum &amp; Michael Krebs</div>
+          <div class="roll-edition">Inaugural Champions</div>
+        </div>
+      </div>
+      <div class="roll-row">
+        <div class="roll-year">2024</div>
+        <div class="roll-trophy">🏆</div>
+        <div>
+          <div class="roll-names">Meghal Khokhani &amp; Kaku Ansah</div>
+          <div class="roll-edition">Champions</div>
+        </div>
+      </div>
+      <div class="roll-row">
+        <div class="roll-year">2025</div>
+        <div class="roll-trophy">🏆</div>
+        <div>
+          <div class="roll-names">Susie Harrington &amp; Charlie Naden</div>
+          <div class="roll-edition">Defending Champions</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
   <!-- STRIP -->
   <div class="championship-strip">
+    <img class="strip-logo" src="dibbledon_logo_cropped.png" alt="Dibbledon Logo" />
     <p class="strip-eyebrow">Est. 2023</p>
     <h2>The Championships, Dibbledon</h2>
     <p>Played with heart, won with honour. All are welcome on the courts of Dibble Ave NW.</p>
@@ -418,7 +530,7 @@
   </div>
 
   <footer>
-    &copy; 2025 <span>The Championships, Dibbledon</span> &nbsp;·&nbsp; All Rights Reserved
+    &copy; 2026 <span>The Championships, Dibbledon</span> &nbsp;·&nbsp; All Rights Reserved
   </footer>
 
 </body>
