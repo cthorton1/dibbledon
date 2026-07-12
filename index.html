@@ -227,6 +227,53 @@
       line-height: 1.5;
     }
 
+    /* ── WHAT TO KNOW ── */
+    .what-to-know {
+      max-width: 700px;
+      margin: 64px auto;
+      padding: 0 24px;
+    }
+
+    .know-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 16px;
+    }
+
+    .know-card {
+      background: #fff;
+      border: 1px solid #e0dbd0;
+      border-top: 3px solid var(--green);
+      border-radius: 4px;
+      padding: 28px 20px;
+      text-align: center;
+    }
+
+    .know-icon {
+      font-size: 32px;
+      margin-bottom: 12px;
+    }
+
+    .know-label {
+      font-size: 11px;
+      letter-spacing: 3px;
+      text-transform: uppercase;
+      color: var(--green);
+      margin-bottom: 8px;
+    }
+
+    .know-text {
+      font-size: 15px;
+      color: #444;
+      line-height: 1.5;
+    }
+
+    @media (max-width: 600px) {
+      .know-grid {
+        grid-template-columns: 1fr;
+      }
+    }
+
     /* ── ROLL OF HONOUR ── */
     .roll-of-honour {
       background: var(--green);
@@ -383,6 +430,12 @@
         flex-direction: column;
         align-items: center;
         text-align: center;
+        padding: 32px 24px;
+      }
+      .logo-section img.logo {
+        width: 200px;
+        height: 200px;
+        padding: 20px;
       }
       .detail-card {
         border-right: none;
@@ -413,7 +466,9 @@
     <div class="logo-tagline">
       <p class="serif-caps">The Championships</p>
       <h2>Where legends are made on Dibble Ave.</h2>
-      <p>The most prestigious pickleball tournament in the neighbourhood. Compete for glory, honour, and eternal bragging rights.</p>
+      <p>We're shutting down the block again for the ultimate pickleball party! Whether you're here for dinking, drinking, or dunkaroos, all are invited for fun!</p>
+      <p style="margin-top: 12px;">Bring a lawn chair for sideline lounging, contribute to the cooler or snack table, and show off your pickleball whites.</p>
+      <a href="https://tournament.dibbledon.com/" class="btn-register" style="margin-top: 24px;">Sign up to Play</a>
     </div>
   </div>
 
@@ -426,16 +481,27 @@
       <div class="sub">2025</div>
     </div>
     <div class="detail-card">
+      <div class="icon">📍</div>
+      <div class="label">Location</div>
+      <div class="value">6553 Dibble Ave NW</div>
+      <div class="sub">Seattle, WA</div>
+    </div>
+    <div class="detail-card">
       <div class="icon">🏆</div>
       <div class="label">Event</div>
       <div class="value">Pickleball</div>
+      <div class="sub">Party</div>
+    </div>
+    <div class="detail-card">
+      <div class="icon">🎾</div>
+      <div class="label">Format</div>
+      <div class="value">Mixed Doubles</div>
       <div class="sub">Tournament</div>
     </div>
     <div class="detail-card">
-      <div class="icon">📍</div>
-      <div class="label">Location</div>
-      <div class="value">Dibble Ave NW</div>
-      <div class="sub">Seattle, WA</div>
+      <div class="icon">🏠</div>
+      <div class="label">Hosts</div>
+      <div class="value" style="font-size: 16px;">The Sheffields &amp; Harrington/Hortons</div>
     </div>
   </div>
 
@@ -452,10 +518,17 @@
       </div>
     </div>
     <div class="schedule-item">
-      <div class="schedule-time">Round 1</div>
+      <div class="schedule-time">1:00 PM</div>
       <div class="schedule-desc">
         <h3>Group Stage Matches</h3>
         <p>Pool play begins. Every point counts toward seeding.</p>
+      </div>
+    </div>
+    <div class="schedule-item">
+      <div class="schedule-time">Lunch</div>
+      <div class="schedule-desc">
+        <h3>Lunch Break</h3>
+        <p>Hot dogs on the BBQ. Fuel up before the next round of action.</p>
       </div>
     </div>
     <div class="schedule-item">
@@ -484,6 +557,34 @@
       <div class="schedule-desc">
         <h3>Champions Ceremony</h3>
         <p>Awards, glory, and the official hoisting of the Dibbledon Cup.</p>
+      </div>
+    </div>
+    <div style="text-align: center; margin-top: 40px;">
+      <a href="https://tournament.dibbledon.com/" class="btn-register">Sign up to Play</a>
+    </div>
+  </section>
+
+  <hr style="border: none; border-top: 1px solid #e0dbd0; max-width: 700px; margin: 0 auto;" />
+
+  <!-- WHAT TO KNOW -->
+  <section class="what-to-know">
+    <p class="section-title">Good to Know</p>
+    <h2 class="section-heading">What to Bring</h2>
+    <div class="know-grid">
+      <div class="know-card">
+        <div class="know-icon">👕</div>
+        <div class="know-label">Attire</div>
+        <div class="know-text">Pickleball whites. Dress the part.</div>
+      </div>
+      <div class="know-card">
+        <div class="know-icon">🪑</div>
+        <div class="know-label">Seating</div>
+        <div class="know-text">Bring a lawn chair for sideline lounging.</div>
+      </div>
+      <div class="know-card">
+        <div class="know-icon">🥤</div>
+        <div class="know-label">Drinks</div>
+        <div class="know-text">Contribute something to the cooler.</div>
       </div>
     </div>
   </section>
