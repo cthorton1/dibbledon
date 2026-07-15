@@ -1,29 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <!-- Google tag (gtag.js) -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-FL610D9XK6"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
-    gtag('config', 'G-FL610D9XK6');
-  </script>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>The Championships, Dibbledon</title>
-  <link rel="icon" type="image/png" href="dibbledon_logo_transparent.png" />
-
-  <!-- Open Graph / link preview -->
-  <meta property="og:title" content="The Championships, Dibbledon" />
-  <meta property="og:description" content="The most prestigious pickleball party on Dibble Ave NW. August 15, 2026 — Seattle, WA." />
-  <meta property="og:image" content="https://dibbledon.com/boys_dibbledon_invite.jpeg" />
-  <meta property="og:url" content="https://dibbledon.com" />
-  <meta property="og:type" content="website" />
-  <meta name="twitter:card" content="summary_large_image" />
-  <meta name="twitter:title" content="The Championships, Dibbledon" />
-  <meta name="twitter:description" content="The most prestigious pickleball party on Dibble Ave NW. August 15, 2026 — Seattle, WA." />
-  <meta name="twitter:image" content="https://dibbledon.com/boys_dibbledon_invite.jpeg" />
+  <link rel="icon" type="image/png" href="dibbledon_logo_cropped.png" />
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet" />
   <style>
     *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 
@@ -35,7 +17,7 @@
     }
 
     body {
-      font-family: 'Georgia', serif;
+      font-family: 'Montserrat', sans-serif;
       background: var(--cream);
       color: #222;
     }
@@ -79,6 +61,7 @@
     }
 
     .hero-text .eyebrow {
+      font-family: 'Georgia', serif;
       font-size: 13px;
       letter-spacing: 4px;
       text-transform: uppercase;
@@ -120,6 +103,7 @@
     }
 
     .logo-tagline .serif-caps {
+      font-family: 'Georgia', serif;
       font-size: 13px;
       letter-spacing: 4px;
       text-transform: uppercase;
@@ -177,7 +161,7 @@
     }
 
     .detail-card .value {
-      font-size: 18px;
+      font-size: 22px;
       font-weight: bold;
       letter-spacing: 1px;
     }
@@ -196,6 +180,7 @@
     }
 
     .section-title {
+      font-family: 'Georgia', serif;
       text-align: center;
       font-size: 11px;
       letter-spacing: 4px;
@@ -246,144 +231,20 @@
       line-height: 1.5;
     }
 
-    /* ── WHAT TO KNOW ── */
-    .what-to-know {
-      max-width: 700px;
-      margin: 64px auto;
-      padding: 0 24px;
-    }
-
-    .know-grid {
-      display: grid;
-      grid-template-columns: repeat(3, 1fr);
-      gap: 16px;
-    }
-
-    .know-card {
-      background: #fff;
-      border: 1px solid #e0dbd0;
-      border-top: 3px solid var(--green);
-      border-radius: 4px;
-      padding: 28px 20px;
-      text-align: center;
-    }
-
-    .know-icon {
-      font-size: 32px;
-      height: 52px;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      margin-bottom: 12px;
-    }
-
-    .know-label {
-      font-size: 11px;
-      letter-spacing: 3px;
-      text-transform: uppercase;
-      color: var(--green);
-      margin-bottom: 8px;
-    }
-
-    .know-text {
-      font-size: 15px;
-      color: #444;
-      line-height: 1.5;
-    }
-
-    @media (max-width: 600px) {
-      .know-grid {
-        grid-template-columns: 1fr;
-      }
-    }
-
-    /* ── ROLL OF HONOUR ── */
-    .roll-of-honour {
+    /* ── CHAMPIONSHIP STRIP ── */
+    .championship-strip {
       background: var(--green);
       color: #fff;
-      padding: 64px 24px;
-      max-width: 100%;
-    }
-
-    .roll-of-honour .eyebrow {
-      text-align: center;
-      font-size: 11px;
-      letter-spacing: 4px;
-      text-transform: uppercase;
-      color: var(--gold);
-      margin-bottom: 8px;
-    }
-
-    .roll-of-honour h2 {
-      text-align: center;
-      font-size: clamp(28px, 4vw, 42px);
-      font-weight: normal;
-      margin-bottom: 40px;
-    }
-
-    .roll {
-      max-width: 640px;
-      margin: 0 auto;
-    }
-
-    .roll-row {
-      display: flex;
-      align-items: center;
-      gap: 24px;
-      padding: 20px 0;
-      border-bottom: 1px solid rgba(255,255,255,0.15);
-    }
-
-    .roll-row:first-child {
-      border-top: 1px solid rgba(255,255,255,0.15);
-    }
-
-    .roll-year {
-      font-size: 13px;
-      letter-spacing: 2px;
-      color: var(--gold);
-      width: 48px;
-      flex-shrink: 0;
-    }
-
-    .roll-trophy {
-      font-size: 22px;
-      flex-shrink: 0;
-    }
-
-    .roll-names {
-      font-size: 20px;
-      font-weight: normal;
-    }
-
-    .roll-edition {
-      font-size: 12px;
-      color: rgba(255,255,255,0.5);
-      margin-top: 3px;
-      letter-spacing: 1px;
-    }
-
-    /* ── CHAMPIONSHIP STRIP ── */
-    .strip-logo {
-      width: 100px;
-      height: 100px;
-      object-fit: contain;
-      margin-bottom: 24px;
-    }
-
-    .championship-strip {
-      background: var(--cream);
-      color: #222;
       text-align: center;
       padding: 56px 24px;
-      border-top: 4px solid var(--green);
     }
 
     .championship-strip .strip-eyebrow {
+      font-family: 'Georgia', serif;
       font-size: 11px;
       letter-spacing: 4px;
       text-transform: uppercase;
-      color: var(--green);
+      color: var(--gold);
       margin-bottom: 12px;
     }
 
@@ -391,14 +252,13 @@
       font-size: clamp(28px, 5vw, 52px);
       font-weight: normal;
       margin-bottom: 24px;
-      color: var(--green);
     }
 
     .championship-strip p {
       font-size: 16px;
       max-width: 520px;
       margin: 0 auto;
-      color: #555;
+      opacity: 0.85;
       line-height: 1.7;
     }
 
@@ -420,81 +280,6 @@
 
     .btn-register:hover {
       background: #e0bc5a;
-    }
-
-    /* ── DIBBLEDON RULES ── */
-    .dibbledon-rules {
-      padding: 64px 24px;
-    }
-
-    .rules-card {
-      max-width: 860px;
-      margin: 0 auto;
-      background: #fff;
-      border: 2px solid var(--gold);
-      border-radius: 4px;
-      padding: 40px 32px 34px;
-    }
-
-    .rules-card .section-heading {
-      color: var(--green);
-    }
-
-    .rules-grid {
-      display: grid;
-      grid-template-columns: repeat(2, 1fr);
-      gap: 14px;
-    }
-
-    .rule-card {
-      background: var(--cream);
-      border: 1px solid #e0dbd0;
-      border-radius: 4px;
-      padding: 22px 20px;
-    }
-
-    .rule-card .rule-head {
-      display: flex;
-      align-items: center;
-      gap: 12px;
-      margin-bottom: 12px;
-    }
-
-    .rule-card .rule-head svg {
-      width: 38px;
-      height: 38px;
-      flex: 0 0 38px;
-    }
-
-    .rule-card .rule-chip {
-      display: inline-block;
-      background: var(--green);
-      color: var(--cream);
-      font-size: 10px;
-      letter-spacing: 2px;
-      text-transform: uppercase;
-      padding: 5px 12px;
-      border-radius: 2px;
-    }
-
-    .rule-card p {
-      font-size: 14px;
-      line-height: 1.65;
-      color: #666;
-    }
-
-    .rule-card p strong {
-      color: #333;
-    }
-
-    .rules-cta {
-      text-align: center;
-    }
-
-    @media (max-width: 640px) {
-      .rules-grid {
-        grid-template-columns: 1fr;
-      }
     }
 
     .divider-ornament {
@@ -524,12 +309,6 @@
         flex-direction: column;
         align-items: center;
         text-align: center;
-        padding: 32px 24px;
-      }
-      .logo-section img.logo {
-        width: 200px;
-        height: 200px;
-        padding: 20px;
       }
       .detail-card {
         border-right: none;
@@ -548,7 +327,7 @@
     <img src="boys_dibbledon_invite.jpeg" alt="Dibbledon Champions" />
     <div class="hero-overlay">
       <div class="hero-text">
-        <p class="eyebrow">August 15, 2026</p>
+        <p class="eyebrow">August 15, 2025</p>
         <h1>Dibbledon</h1>
       </div>
     </div>
@@ -556,13 +335,11 @@
 
   <!-- LOGO + INTRO -->
   <div class="logo-section">
-    <img class="logo" src="dibbledon_logo_transparent.png" alt="Dibbledon Logo" />
+    <img class="logo" src="dibbledon_logo_cropped.png" alt="Dibbledon Logo" />
     <div class="logo-tagline">
       <p class="serif-caps">The Championships</p>
-      <h2>Where legends are made.</h2>
-      <p>We're shutting down the block again for the ultimate pickleball party! Whether you're here for dinking, drinking, or dunkaroos, all are invited for fun!</p>
-      <p style="margin-top: 12px;">Bring a lawn chair for sideline lounging, contribute to the cooler or snack table, and show off your pickleball whites.</p>
-      <a href="https://tournament.dibbledon.com/" target="_blank" rel="noopener" class="btn-register" style="margin-top: 24px;">RSVP</a>
+      <h2>Where legends are made on Dibble Ave.</h2>
+      <p>The most prestigious pickleball tournament in the neighbourhood. Compete for glory, honour, and eternal bragging rights.</p>
     </div>
   </div>
 
@@ -571,28 +348,20 @@
     <div class="detail-card">
       <div class="icon">📅</div>
       <div class="label">Date</div>
-      <div class="value">August 15, 2026</div>
-    </div>
-    <div class="detail-card">
-      <div class="icon">📍</div>
-      <div class="label">Location</div>
-      <div class="value">6553 Dibble Ave NW</div>
-      <div class="sub">Seattle, WA</div>
+      <div class="value">August 15</div>
+      <div class="sub">2025</div>
     </div>
     <div class="detail-card">
       <div class="icon">🏆</div>
       <div class="label">Event</div>
-      <div class="value">Party &amp; Pickle</div>
+      <div class="value">Pickleball</div>
+      <div class="sub">Tournament</div>
     </div>
     <div class="detail-card">
-      <div class="icon">🎾</div>
-      <div class="label">Tourney Format</div>
-      <div class="value">Mixed Doubles</div>
-    </div>
-    <div class="detail-card">
-      <div class="icon">🏠</div>
-      <div class="label">Hosts</div>
-      <div class="value">The Sheffields &amp; Harrington/Hortons</div>
+      <div class="icon">📍</div>
+      <div class="label">Location</div>
+      <div class="value">Dibble Ave NW</div>
+      <div class="sub">Seattle, WA</div>
     </div>
   </div>
 
@@ -604,186 +373,57 @@
     <div class="schedule-item">
       <div class="schedule-time">12:00 PM</div>
       <div class="schedule-desc">
-        <h3>Party Starts</h3>
-        <p>Come early, grab a drink, and settle in.</p>
-      </div>
-    </div>
-    <div class="schedule-item">
-      <div class="schedule-time">12:15 PM</div>
-      <div class="schedule-desc">
         <h3>Player Check-In &amp; Warm-Up</h3>
-        <p>Required check-in to get your tournament schedule and loosen up those paddle arms.</p>
+        <p>Arrive, collect your credentials, and loosen up those paddle arms.</p>
       </div>
     </div>
     <div class="schedule-item">
-      <div class="schedule-time">1:00 PM</div>
+      <div class="schedule-time">Round 1</div>
       <div class="schedule-desc">
-        <h3>Tournament Starts — Group Stage Matches</h3>
+        <h3>Group Stage Matches</h3>
         <p>Pool play begins. Every point counts toward seeding.</p>
-      </div>
-    </div>
-    <div class="schedule-item">
-      <div class="schedule-time">Lunch</div>
-      <div class="schedule-desc">
-        <h3>Lunch Break</h3>
-        <p>Hot dogs on the BBQ. Fuel up before the next round of action.</p>
       </div>
     </div>
     <div class="schedule-item">
       <div class="schedule-time">Knock Out</div>
       <div class="schedule-desc">
-        <h3>Knock Out Rounds</h3>
+        <h3>Knock Out Round</h3>
         <p>No mercy. Win or go home.</p>
       </div>
     </div>
     <div class="schedule-item">
-      <div class="schedule-time">Afternoon</div>
+      <div class="schedule-time">Semi-Finals</div>
       <div class="schedule-desc">
-        <h3>Championship Final &amp; Ceremony</h3>
-        <p>One team adds their name to the Roll of Honour. Awards, glory, and the official hoisting of the Dibbledon Cup.</p>
+        <h3>Semi-Finals</h3>
+        <p>The final four battle for their shot at the Dibbledon Cup.</p>
       </div>
     </div>
-    <div style="text-align: center; margin-top: 40px;">
-      <a href="https://tournament.dibbledon.com/" target="_blank" rel="noopener" class="btn-register">RSVP</a>
-    </div>
-  </section>
-
-  <hr style="border: none; border-top: 4px solid var(--green); margin: 0;" />
-
-  <!-- WHAT TO KNOW -->
-  <section class="what-to-know">
-    <p class="section-title">Good to Know</p>
-    <h2 class="section-heading">What to Bring</h2>
-    <div class="know-grid">
-      <div class="know-card">
-        <div class="know-icon">
-          <svg width="44" height="44" viewBox="0 0 52 52" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path d="M17 5 L8 15 L14 18 L14 46 L38 46 L38 18 L44 15 L35 5 L31 9 C30 12 22 12 21 9 Z" fill="none" stroke="#1a5c2a" stroke-width="2.5" stroke-linejoin="round" stroke-linecap="round"/>
-            <path d="M21 9 C21 14 31 14 31 9" fill="none" stroke="#1a5c2a" stroke-width="2.5" stroke-linecap="round"/>
-            <line x1="22" y1="11" x2="30" y2="11" stroke="#1a5c2a" stroke-width="1.5" stroke-linecap="round"/>
-            <line x1="23" y1="13.5" x2="29" y2="13.5" stroke="#1a5c2a" stroke-width="1.5" stroke-linecap="round"/>
-            <line x1="26" y1="18" x2="26" y2="24" stroke="#1a5c2a" stroke-width="1.5" stroke-linecap="round"/>
-          </svg>
-        </div>
-        <div class="know-label">Attire</div>
-        <div class="know-text">Pickleball whites. Dress the part.</div>
-      </div>
-      <div class="know-card">
-        <div class="know-icon">🪑</div>
-        <div class="know-label">Seating</div>
-        <div class="know-text">Bring a lawn chair for sideline lounging.</div>
-      </div>
-      <div class="know-card">
-        <div class="know-icon">🥤</div>
-        <div class="know-label">Drinks</div>
-        <div class="know-text">Contribute something to the cooler. Keg is provided.</div>
+    <div class="schedule-item">
+      <div class="schedule-time">Finals</div>
+      <div class="schedule-desc">
+        <h3>Championship Final</h3>
+        <p>The road to the Dibbledon trophy ends here. Only one champion.</p>
       </div>
     </div>
-  </section>
-
-  <!-- ROLL OF HONOUR -->
-  <div class="roll-of-honour">
-    <p class="eyebrow">Past Champions</p>
-    <h2>Roll of Honour</h2>
-    <div class="roll">
-      <div class="roll-row">
-        <div class="roll-year">2023</div>
-        <div class="roll-trophy">🏆</div>
-        <div>
-          <div class="roll-names">Nick Ketchum &amp; Michael Krebs</div>
-          <div class="roll-edition">Inaugural Champions</div>
-        </div>
-      </div>
-      <div class="roll-row">
-        <div class="roll-year">2024</div>
-        <div class="roll-trophy">🏆</div>
-        <div>
-          <div class="roll-names">Meghal Khokhani &amp; Kaku Ansah</div>
-          <div class="roll-edition">Champions</div>
-        </div>
-      </div>
-      <div class="roll-row">
-        <div class="roll-year">2025</div>
-        <div class="roll-trophy">🏆</div>
-        <div>
-          <div class="roll-names">Susie Harrington &amp; Charlie Naden</div>
-          <div class="roll-edition">Defending Champions</div>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <!-- DIBBLEDON RULES -->
-  <section class="dibbledon-rules">
-    <div class="rules-card">
-      <p class="section-title">Pickleball Tournament Play</p>
-      <h2 class="section-heading">Dibbledon Rules</h2>
-      <div class="rules-grid">
-        <div class="rule-card">
-          <div class="rule-head">
-            <svg viewBox="0 0 44 44" fill="none" aria-hidden="true">
-              <line x1="4" y1="34" x2="40" y2="34" stroke="#1a5c2a" stroke-width="2.5" stroke-linecap="round"/>
-              <path d="M7 34 l3 -4 l2 4 M31 34 l3 -4 l2 4" stroke="#1a5c2a" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
-              <circle cx="22" cy="25" r="7" stroke="#1a5c2a" stroke-width="2.5"/>
-              <circle cx="20" cy="23" r="1" fill="#1a5c2a"/><circle cx="25" cy="24" r="1" fill="#1a5c2a"/><circle cx="22" cy="28" r="1" fill="#1a5c2a"/>
-            </svg>
-            <span class="rule-chip">Street Ball</span>
-          </div>
-          <p><strong>Play it as it lies.</strong> Ball clips a crack, a leaf, or anything else on the ground? Play on — <strong>no redos</strong> for anything the court surface does.</p>
-        </div>
-        <div class="rule-card">
-          <div class="rule-head">
-            <svg viewBox="0 0 44 44" fill="none" aria-hidden="true">
-              <line x1="22" y1="40" x2="22" y2="27" stroke="#1a5c2a" stroke-width="2.5" stroke-linecap="round"/>
-              <circle cx="22" cy="13" r="9" stroke="#1a5c2a" stroke-width="2.5"/>
-              <circle cx="12.5" cy="19" r="6" stroke="#1a5c2a" stroke-width="2.5"/>
-              <circle cx="31.5" cy="19" r="6" stroke="#1a5c2a" stroke-width="2.5"/>
-            </svg>
-            <span class="rule-chip">The Tree Clause</span>
-          </div>
-          <p>If the ball hits a <strong>tree branch</strong>, either team can call a <strong>redo</strong> — replay the point, no fault on anyone.</p>
-        </div>
-        <div class="rule-card">
-          <div class="rule-head">
-            <svg viewBox="0 0 44 44" fill="none" aria-hidden="true">
-              <line x1="22" y1="6" x2="22" y2="38" stroke="#1a5c2a" stroke-width="2.5" stroke-linecap="round"/>
-              <line x1="14" y1="38" x2="30" y2="38" stroke="#1a5c2a" stroke-width="2.5" stroke-linecap="round"/>
-              <line x1="8" y1="12" x2="36" y2="12" stroke="#1a5c2a" stroke-width="2.5" stroke-linecap="round"/>
-              <path d="M8 12 l-4 9 a5 4 0 0 0 8 0 Z" stroke="#1a5c2a" stroke-width="2" stroke-linejoin="round"/>
-              <path d="M36 12 l-4 9 a5 4 0 0 0 8 0 Z" stroke="#1a5c2a" stroke-width="2" stroke-linejoin="round"/>
-            </svg>
-            <span class="rule-chip">Integrity</span>
-          </div>
-          <p><strong>Each team calls the lines on their own side.</strong> No referees at Dibbledon — play with integrity, and give the benefit of the doubt to your opponents.</p>
-        </div>
-        <div class="rule-card">
-          <div class="rule-head">
-            <svg viewBox="0 0 44 44" fill="none" aria-hidden="true">
-              <circle cx="13" cy="12" r="6" stroke="#1a5c2a" stroke-width="2.5"/>
-              <path d="M13 3 v2 M13 19 v2 M4 12 h2 M20 12 h2 M6.6 5.6 l1.4 1.4 M18 17 l1.4 1.4 M19.4 5.6 L18 7 M8 17 l-1.4 1.4" stroke="#1a5c2a" stroke-width="2" stroke-linecap="round"/>
-              <path d="M10 32 h22 M28 28 l4 4 -4 4" stroke="#1a5c2a" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
-              <path d="M34 40 h-22 M16 36 l-4 4 4 4" stroke="#1a5c2a" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" transform="translate(0,-2)"/>
-            </svg>
-            <span class="rule-chip">Switch Sides</span>
-          </div>
-          <p>If the sun, wind, or other natural conditions make one side better, <strong>switch sides when the first team reaches 7 points</strong>.</p>
-        </div>
-      </div>
-      <div class="rules-cta">
-        <a href="/rules" class="btn-register">Full Pickleball Rules</a>
+    <div class="schedule-item">
+      <div class="schedule-time">Evening</div>
+      <div class="schedule-desc">
+        <h3>Champions Ceremony</h3>
+        <p>Awards, glory, and the official hoisting of the Dibbledon Cup.</p>
       </div>
     </div>
   </section>
 
   <!-- STRIP -->
   <div class="championship-strip">
-    <img class="strip-logo" src="dibbledon_logo_transparent.png" alt="Dibbledon Logo" />
+    <p class="strip-eyebrow">Est. 2023</p>
     <h2>The Championships, Dibbledon</h2>
     <p>Played with heart, won with honour. All are welcome on the courts of Dibble Ave NW.</p>
+    <div class="divider-ornament">· · ·</div>
   </div>
 
   <footer>
-    &copy; 2026 <span>The Championships, Dibbledon</span> &nbsp;·&nbsp; All Rights Reserved
+    &copy; 2025 <span>The Championships, Dibbledon</span> &nbsp;·&nbsp; All Rights Reserved
   </footer>
 
 </body>
