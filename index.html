@@ -422,32 +422,78 @@
       background: #e0bc5a;
     }
 
-    .btn-secondary {
+    /* ── DIBBLEDON RULES ── */
+    .dibbledon-rules {
+      padding: 64px 24px;
+    }
+
+    .rules-card {
+      max-width: 860px;
+      margin: 0 auto;
+      background: #fff;
+      border: 2px solid var(--gold);
+      border-radius: 4px;
+      padding: 40px 32px 34px;
+    }
+
+    .rules-card .section-heading {
+      color: var(--green);
+    }
+
+    .rules-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 14px;
+    }
+
+    .rule-card {
+      background: var(--cream);
+      border: 1px solid #e0dbd0;
+      border-radius: 4px;
+      padding: 22px 20px;
+    }
+
+    .rule-card .rule-head {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      margin-bottom: 12px;
+    }
+
+    .rule-card .rule-icon {
+      font-size: 26px;
+      line-height: 1;
+    }
+
+    .rule-card .rule-chip {
       display: inline-block;
-      margin-top: 32px;
-      padding: 15px 40px;
-      background: transparent;
-      color: #fff;
-      text-decoration: none;
-      font-size: 13px;
-      letter-spacing: 3px;
+      background: var(--green);
+      color: var(--cream);
+      font-size: 10px;
+      letter-spacing: 2px;
       text-transform: uppercase;
-      font-family: Georgia, serif;
-      font-weight: bold;
-      border: 1px solid rgba(255,255,255,0.6);
+      padding: 5px 12px;
       border-radius: 2px;
-      transition: background 0.2s, border-color 0.2s;
     }
 
-    .btn-secondary:hover {
-      background: rgba(255,255,255,0.12);
-      border-color: #fff;
+    .rule-card p {
+      font-size: 14px;
+      line-height: 1.65;
+      color: #666;
     }
 
-    .btn-register + .btn-secondary { margin-left: 12px; }
+    .rule-card p strong {
+      color: #333;
+    }
 
-    @media (max-width: 600px) {
-      .btn-register + .btn-secondary { margin-left: 0; }
+    .rules-cta {
+      text-align: center;
+    }
+
+    @media (max-width: 640px) {
+      .rules-grid {
+        grid-template-columns: 1fr;
+      }
     }
 
     .divider-ornament {
@@ -516,7 +562,6 @@
       <p>We're shutting down the block again for the ultimate pickleball party! Whether you're here for dinking, drinking, or dunkaroos, all are invited for fun!</p>
       <p style="margin-top: 12px;">Bring a lawn chair for sideline lounging, contribute to the cooler or snack table, and show off your pickleball whites.</p>
       <a href="https://tournament.dibbledon.com/" target="_blank" rel="noopener" class="btn-register" style="margin-top: 24px;">RSVP</a>
-      <a href="/rules" class="btn-secondary" style="margin-top: 24px;">How to Play</a>
     </div>
   </div>
 
@@ -666,6 +711,47 @@
       </div>
     </div>
   </div>
+
+  <!-- DIBBLEDON RULES -->
+  <section class="dibbledon-rules">
+    <div class="rules-card">
+      <p class="section-title">Pickleball Tournament Play</p>
+      <h2 class="section-heading">Dibbledon Rules</h2>
+      <div class="rules-grid">
+        <div class="rule-card">
+          <div class="rule-head">
+            <span class="rule-icon">🍂</span>
+            <span class="rule-chip">Street Ball</span>
+          </div>
+          <p><strong>Play it as it lies.</strong> Ball clips a crack, a leaf, or anything else on the ground? Play on — <strong>no redos</strong> for anything the court surface does.</p>
+        </div>
+        <div class="rule-card">
+          <div class="rule-head">
+            <span class="rule-icon">🌳</span>
+            <span class="rule-chip">The Tree Clause</span>
+          </div>
+          <p>If the ball hits a <strong>tree branch</strong>, either team can call a <strong>redo</strong> — replay the point, no fault on anyone.</p>
+        </div>
+        <div class="rule-card">
+          <div class="rule-head">
+            <span class="rule-icon">🤝</span>
+            <span class="rule-chip">Integrity</span>
+          </div>
+          <p><strong>Each team calls the lines on their own side.</strong> No referees at Dibbledon — play with integrity, and give the benefit of the doubt to your opponents.</p>
+        </div>
+        <div class="rule-card">
+          <div class="rule-head">
+            <span class="rule-icon">🔄</span>
+            <span class="rule-chip">Switch Sides</span>
+          </div>
+          <p>If the sun, wind, or other natural conditions make one side better, <strong>switch sides when the first team reaches 7 points</strong>.</p>
+        </div>
+      </div>
+      <div class="rules-cta">
+        <a href="/rules" class="btn-register">Read the Full Rules</a>
+      </div>
+    </div>
+  </section>
 
   <!-- STRIP -->
   <div class="championship-strip">

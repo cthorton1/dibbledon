@@ -417,6 +417,18 @@
       padding: 24px 22px;
     }
 
+    .house-rule .rule-head {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      margin-bottom: 12px;
+    }
+
+    .house-rule .rule-icon {
+      font-size: 26px;
+      line-height: 1;
+    }
+
     .house-rule .chip {
       display: inline-block;
       background: var(--green);
@@ -426,7 +438,6 @@
       text-transform: uppercase;
       padding: 5px 12px;
       border-radius: 2px;
-      margin-bottom: 12px;
     }
 
     .house-rule p {
@@ -689,25 +700,37 @@
     <div class="house-card">
       <div class="house-head">
         <img src="dibbledon_logo_transparent.png" alt="Dibbledon Logo" />
-        <p class="section-title">Part Four · Local Rules · Read Before Arguing</p>
+        <p class="section-title">Part Four · Pickleball Tournament Play</p>
         <h2>Dibbledon Rules</h2>
       </div>
 
       <div class="house-grid">
         <div class="house-rule">
-          <span class="chip">Street Ball</span>
+          <div class="rule-head">
+            <span class="rule-icon">🍂</span>
+            <span class="chip">Street Ball</span>
+          </div>
           <p><strong>Play it as it lies.</strong> Ball clips a crack, a leaf, or anything else on the ground? Play on — <strong>no redos</strong> for anything the court surface does.</p>
         </div>
         <div class="house-rule">
-          <span class="chip">The Tree Clause</span>
+          <div class="rule-head">
+            <span class="rule-icon">🌳</span>
+            <span class="chip">The Tree Clause</span>
+          </div>
           <p>If the ball hits a <strong>tree branch</strong>, either team can call a <strong>redo</strong> — replay the point, no fault on anyone.</p>
         </div>
         <div class="house-rule">
-          <span class="chip">Integrity</span>
+          <div class="rule-head">
+            <span class="rule-icon">🤝</span>
+            <span class="chip">Integrity</span>
+          </div>
           <p><strong>Each team calls the lines on their own side.</strong> No referees at Dibbledon — play with integrity, and give the benefit of the doubt to your opponents.</p>
         </div>
         <div class="house-rule">
-          <span class="chip">Switch Sides</span>
+          <div class="rule-head">
+            <span class="rule-icon">🔄</span>
+            <span class="chip">Switch Sides</span>
+          </div>
           <p>If the sun, wind, or other natural conditions make one side better, <strong>switch sides when the first team reaches 7 points</strong>.</p>
         </div>
       </div>
