@@ -422,6 +422,34 @@
       background: #e0bc5a;
     }
 
+    .btn-secondary {
+      display: inline-block;
+      margin-top: 32px;
+      padding: 15px 40px;
+      background: transparent;
+      color: #fff;
+      text-decoration: none;
+      font-size: 13px;
+      letter-spacing: 3px;
+      text-transform: uppercase;
+      font-family: Georgia, serif;
+      font-weight: bold;
+      border: 1px solid rgba(255,255,255,0.6);
+      border-radius: 2px;
+      transition: background 0.2s, border-color 0.2s;
+    }
+
+    .btn-secondary:hover {
+      background: rgba(255,255,255,0.12);
+      border-color: #fff;
+    }
+
+    .btn-register + .btn-secondary { margin-left: 12px; }
+
+    @media (max-width: 600px) {
+      .btn-register + .btn-secondary { margin-left: 0; }
+    }
+
     .divider-ornament {
       text-align: center;
       margin: 48px 0 0;
@@ -488,6 +516,7 @@
       <p>We're shutting down the block again for the ultimate pickleball party! Whether you're here for dinking, drinking, or dunkaroos, all are invited for fun!</p>
       <p style="margin-top: 12px;">Bring a lawn chair for sideline lounging, contribute to the cooler or snack table, and show off your pickleball whites.</p>
       <a href="https://tournament.dibbledon.com/" target="_blank" rel="noopener" class="btn-register" style="margin-top: 24px;">RSVP</a>
+      <a href="/rules" class="btn-secondary" style="margin-top: 24px;">How to Play</a>
     </div>
   </div>
 
